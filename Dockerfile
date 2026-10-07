@@ -1,0 +1,8 @@
+FROM debian:stable-slim
+
+# COPY source destination
+COPY docker-bootdev /bin/docker-bootdev
+
+ENV PORT=8991
+
+CMD ["/bin/docker-bootdev"]
